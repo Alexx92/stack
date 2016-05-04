@@ -53,9 +53,10 @@ public class StackTest {
 	@Test
 	public void agregarPopUnoyDevuelveUno() {
 		/*Arrange*/		
-		/*Act*/		
+		/*Act*/
+		pila.push(1);
 		/*Assert*/
-		assertEquals(1,pila.pop(1));		
+		assertEquals(1,pila.pop());		
 	}
 	
 	

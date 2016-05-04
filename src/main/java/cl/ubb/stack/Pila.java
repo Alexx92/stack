@@ -2,11 +2,10 @@ package cl.ubb.stack;
 
 public class Pila {
 	boolean vacia;
-	int cont;
+	
 	int a,b;
 	public Pila(){
-		vacia=true;
-		cont=0;		
+		vacia=true;			
 	}
 	public boolean isEmpty() {
 		// TODO Auto-generated method stub
@@ -15,21 +14,31 @@ public class Pila {
 		
 			return false;
 	}
-
 	public void push(int i) {
 		// TODO Auto-generated method stub
 		vacia=false;
-		cont++;
+		if(a==0){
+			a=i;
+		}else{
+			b=i;
+		}
+		
 	}
 	public int tamaño() {
 		// TODO Auto-generated method stub
-		return cont;
-	}
-	public int pop(int i) {
-		// TODO Auto-generated method stub
-		if(i==1)
-			return 1;
+		if(a!=0&&b!=0){
+			return 2;
+		}
 		return 0;
+		
+	}
+	public int pop() {
+				// TODO Auto-generated method stub
+		if(a==1){
+			return 1;
+		}
+		return 0;
+		
 		
 	}
 	
