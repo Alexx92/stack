@@ -9,7 +9,7 @@ import org.junit.Test;
 public class StackTest {
 
 	@Test
-	public void creaPilaVacia() {
+	public void creaPilaVaciaRetornaTrue() {
 		/*Arrange*/
 		Pila pila = new Pila();
 		/*Act*/
@@ -18,6 +18,18 @@ public class StackTest {
 		assertEquals(true,valor);
 		
 	}
+	@Test
+	public void agregarUnoStackNoEstaVacio() {
+		/*Arrange*/
+		Pila pila = new Pila();
+		/*Act*/
+		pila.push(1);
+		boolean valor= pila.isEmpty();
+		/*Assert*/
+		assertEquals(false,valor);
+		
+	}
+	
 
 
 }
