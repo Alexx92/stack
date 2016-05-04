@@ -50,6 +50,13 @@ public class StackTest {
 		/*Assert*/
 		assertEquals(2,pila.tamaño());		
 	}
+	@Test
+	public void agregarPopUnoyDevuelveUno() {
+		/*Arrange*/		
+		/*Act*/		
+		/*Assert*/
+		assertEquals(1,pila.pop(1));		
+	}
 	
 	
 

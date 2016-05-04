@@ -25,6 +25,13 @@ public class Pila {
 		// TODO Auto-generated method stub
 		return cont;
 	}
+	public int pop(int i) {
+		// TODO Auto-generated method stub
+		if(i==1)
+			return 1;
+		return 0;
+		
+	}
 	
 
 }
