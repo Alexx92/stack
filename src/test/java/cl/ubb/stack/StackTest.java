@@ -29,6 +29,19 @@ public class StackTest {
 		assertEquals(false,valor);
 		
 	}
+	@Test
+	public void agregarUnoYDosStackNoEstaVacio() {
+		/*Arrange*/
+		Pila pila = new Pila();
+		/*Act*/
+		pila.push(1);
+		pila.push(2);
+		boolean valor= pila.isEmpty();
+		/*Assert*/
+		assertEquals(false,valor);
+		
+	}
+	
 	
 
 

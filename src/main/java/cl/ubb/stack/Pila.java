@@ -17,5 +17,6 @@ public class Pila {
 		// TODO Auto-generated method stub
 		vacia=false;
 	}
+	
 
 }
